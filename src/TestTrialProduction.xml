@@ -1,0 +1,254 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="TestTrialProduction" parallel="false" thread-count="1" preserve-order="true">
+<parameter name="driverID" value="TestTrialProduction"/>
+<parameter name="browser" value="${browser}"/>
+<parameter name="record" value="${record}"/>
+<parameter name="productName" value="${productName}"/>
+<parameter name="projectName" value="${projectName}"/>
+<parameter name="implicitlyWait" value="${implicitlyWait}"/>
+<parameter name="closeBrowserFlag" value="${closeBrowserFlag}"/>
+<parameter name="usingOpenChrome" value="${usingOpenChrome}"/>
+<parameter name="taskId" value="${taskId}"/>
+<parameter name="recordId" value="${recordId}"/>
+<parameter name="suiteId" value="${suiteId}"/>
+<parameter name="delHistoryReport" value="${delHistoryReport}"/>
+<parameter name="stepRerun" value="${stepRerun}"/>
+<parameter name="caseRerun" value="${caseRerun}"/>
+<parameter name="suiteRerun" value="${suiteRerun}"/>
+<parameter name="maxRetry" value="${maxRetry}"/>
+<parameter name="skipOtherTCsWhenFailed" value="0"/>
+<listeners>
+<listener class-name="Framework.MyNewReport"/>
+<listener class-name="Framework.MyListener"/>
+</listeners>
+<test name="1_OpenDPMThenLoginDPM_5" preserve-order="true">
+<parameter name="paramGroup" value="" />
+<parameter name="skipOtherTCsWhenFailed" value="1" />
+<classes>
+<class name="TestCases.TestTrialProduction.OpenDPMThenLoginDPM_5"/>
+</classes>
+</test>
+<test name="2_EnterMainPage_3" preserve-order="true" enabled="false">
+<parameter name="paramGroup" value="" />
+<parameter name="skipOtherTCsWhenFailed" value="1" />
+<classes>
+<class name="TestCases.TestTrialProduction.EnterMainPage_3"/>
+</classes>
+</test>
+<test name="3_EnterTrialProductionPage_1" preserve-order="true">
+<parameter name="paramGroup" value="" />
+<parameter name="skipOtherTCsWhenFailed" value="1" />
+<classes>
+<class name="TestCases.TestTrialProduction.EnterTrialProductionPage_1"/>
+</classes>
+</test>
+<test name="4_CreateTrialProduction_1" preserve-order="true">
+<parameter name="paramGroup" value="" />
+<parameter name="skipOtherTCsWhenFailed" value="1" />
+<classes>
+<class name="TestCases.TestTrialProduction.CreateTrialProduction_1"/>
+</classes>
+</test>
+<test name="5_FillInTrialProductionInfo_1" preserve-order="true">
+<parameter name="paramGroup" value="" />
+<parameter name="skipOtherTCsWhenFailed" value="1" />
+<classes>
+<class name="TestCases.TestTrialProduction.FillInTrialProductionInfo_1"/>
+</classes>
+</test>
+<test name="6_ChooseItems_2" preserve-order="true">
+<parameter name="paramGroup" value="" />
+<parameter name="skipOtherTCsWhenFailed" value="1" />
+<classes>
+<class name="TestCases.TestTrialProduction.ChooseItems_2"/>
+</classes>
+</test>
+<test name="7_LinkProductInfo_2" preserve-order="true">
+<parameter name="paramGroup" value="" />
+<parameter name="skipOtherTCsWhenFailed" value="1" />
+<classes>
+<class name="TestCases.TestTrialProduction.LinkProductInfo_2"/>
+</classes>
+</test>
+<test name="8_RequirementInformation_2" preserve-order="true">
+<parameter name="paramGroup" value="" />
+<classes>
+<class name="TestCases.TestTrialProduction.RequirementInformation_2"/>
+</classes>
+</test>
+<test name="9_PlanStartDate_2" preserve-order="true">
+<parameter name="paramGroup" value="" />
+<parameter name="skipOtherTCsWhenFailed" value="1" />
+<classes>
+<class name="TestCases.TestTrialProduction.PlanStartDate_2"/>
+</classes>
+</test>
+<test name="10_PlanEndDate_2" preserve-order="true">
+<parameter name="paramGroup" value="" />
+<parameter name="skipOtherTCsWhenFailed" value="1" />
+<classes>
+<class name="TestCases.TestTrialProduction.PlanEndDate_2"/>
+</classes>
+</test>
+<test name="11_TechnologyWorkflowPreparation_2" preserve-order="true">
+<parameter name="paramGroup" value="" />
+<parameter name="skipOtherTCsWhenFailed" value="1" />
+<classes>
+<class name="TestCases.TestTrialProduction.TechnologyWorkflowPreparation_2"/>
+</classes>
+</test>
+<test name="12_ChoosePIC_2" preserve-order="true">
+<parameter name="paramGroup" value="" />
+<parameter name="skipOtherTCsWhenFailed" value="1" />
+<classes>
+<class name="TestCases.TestTrialProduction.ChoosePIC_2"/>
+</classes>
+</test>
+<test name="13_NextStep_2" preserve-order="true">
+<parameter name="paramGroup" value="" />
+<parameter name="skipOtherTCsWhenFailed" value="1" />
+<classes>
+<class name="TestCases.TestTrialProduction.NextStep_2"/>
+</classes>
+</test>
+<test name="14_ChooseProductTechnologyLeader_1" preserve-order="true">
+<parameter name="paramGroup" value="" />
+<parameter name="skipOtherTCsWhenFailed" value="1" />
+<classes>
+<class name="TestCases.TestTrialProduction.ChooseProductTechnologyLeader_1"/>
+</classes>
+</test>
+<test name="15_ChooseQualityRepresentative_1" preserve-order="true">
+<parameter name="paramGroup" value="" />
+<parameter name="skipOtherTCsWhenFailed" value="1" />
+<classes>
+<class name="TestCases.TestTrialProduction.ChooseQualityRepresentative_1"/>
+</classes>
+</test>
+<test name="16_ChooseFinancialRepresentative_2" preserve-order="true">
+<parameter name="paramGroup" value="" />
+<parameter name="skipOtherTCsWhenFailed" value="1" />
+<classes>
+<class name="TestCases.TestTrialProduction.ChooseFinancialRepresentative_2"/>
+</classes>
+</test>
+<test name="17_ChooseDepartmentModuleLeader_2" preserve-order="true">
+<parameter name="paramGroup" value="" />
+<parameter name="skipOtherTCsWhenFailed" value="1" />
+<classes>
+<class name="TestCases.TestTrialProduction.ChooseDepartmentModuleLeader_2"/>
+</classes>
+</test>
+<test name="18_ChooseBOMMember_1" preserve-order="true" enabled="false">
+<parameter name="paramGroup" value="" />
+<parameter name="skipOtherTCsWhenFailed" value="1" />
+<classes>
+<class name="TestCases.TestTrialProduction.ChooseBOMMember_1"/>
+</classes>
+</test>
+<test name="19_ChooseProductionPlanner_2" preserve-order="true">
+<parameter name="paramGroup" value="" />
+<parameter name="skipOtherTCsWhenFailed" value="1" />
+<classes>
+<class name="TestCases.TestTrialProduction.ChooseProductionPlanner_2"/>
+</classes>
+</test>
+<test name="20_ChooseProjectManagers_2" preserve-order="true">
+<parameter name="paramGroup" value="" />
+<parameter name="skipOtherTCsWhenFailed" value="1" />
+<classes>
+<class name="TestCases.TestTrialProduction.ChooseProjectManagers_2"/>
+</classes>
+</test>
+<test name="21_ChooseReceiverAfterProcessRelease_2" preserve-order="true">
+<parameter name="paramGroup" value="" />
+<parameter name="skipOtherTCsWhenFailed" value="1" />
+<classes>
+<class name="TestCases.TestTrialProduction.ChooseReceiverAfterProcessRelease_2"/>
+</classes>
+</test>
+<test name="22_StartFlow_3" preserve-order="true">
+<parameter name="paramGroup" value="" />
+<parameter name="skipOtherTCsWhenFailed" value="1" />
+<classes>
+<class name="TestCases.TestTrialProduction.StartFlow_3"/>
+</classes>
+</test>
+<test name="23_LogoutAndLogin_1" preserve-order="true">
+<parameter name="paramGroup" value="" />
+<parameter name="skipOtherTCsWhenFailed" value="1" />
+<classes>
+<class name="TestCases.TestTrialProduction.LogoutAndLogin_1"/>
+</classes>
+</test>
+<test name="24_EnterTrialProductionPage_1" preserve-order="true">
+<parameter name="paramGroup" value="" />
+<parameter name="skipOtherTCsWhenFailed" value="1" />
+<classes>
+<class name="TestCases.TestTrialProduction.EnterTrialProductionPage_1"/>
+</classes>
+</test>
+<test name="25_ChooseTrialProductionFlowName1_1" preserve-order="true">
+<parameter name="paramGroup" value="" />
+<parameter name="skipOtherTCsWhenFailed" value="1" />
+<classes>
+<class name="TestCases.TestTrialProduction.ChooseTrialProductionFlowName1_1"/>
+</classes>
+</test>
+<test name="26_EnterTrialProductionFlow1_1" preserve-order="true">
+<parameter name="paramGroup" value="" />
+<parameter name="skipOtherTCsWhenFailed" value="1" />
+<classes>
+<class name="TestCases.TestTrialProduction.EnterTrialProductionFlow1_1"/>
+</classes>
+</test>
+<test name="27_CountersignFlowNode_1" preserve-order="true">
+<parameter name="paramGroup" value="" />
+<parameter name="skipOtherTCsWhenFailed" value="1" />
+<classes>
+<class name="TestCases.TestTrialProduction.CountersignFlowNode_1"/>
+</classes>
+</test>
+<test name="28_ChooseTrialProductionFlowName2_1" preserve-order="true">
+<parameter name="paramGroup" value="" />
+<parameter name="skipOtherTCsWhenFailed" value="1" />
+<classes>
+<class name="TestCases.TestTrialProduction.ChooseTrialProductionFlowName2_1"/>
+</classes>
+</test>
+<test name="29_EnterTrialProductionFlow2_1" preserve-order="true">
+<parameter name="paramGroup" value="" />
+<parameter name="skipOtherTCsWhenFailed" value="1" />
+<classes>
+<class name="TestCases.TestTrialProduction.EnterTrialProductionFlow2_1"/>
+</classes>
+</test>
+<test name="30_SubmitAuditFlowNode_2" preserve-order="true">
+<parameter name="paramGroup" value="" />
+<parameter name="skipOtherTCsWhenFailed" value="1" />
+<classes>
+<class name="TestCases.TestTrialProduction.SubmitAuditFlowNode_2"/>
+</classes>
+</test>
+<test name="31_ChooseTrialProductionFlowName3_1" preserve-order="true">
+<parameter name="paramGroup" value="" />
+<parameter name="skipOtherTCsWhenFailed" value="1" />
+<classes>
+<class name="TestCases.TestTrialProduction.ChooseTrialProductionFlowName3_1"/>
+</classes>
+</test>
+<test name="32_EnterTrialProductionFlow3_1" preserve-order="true">
+<parameter name="paramGroup" value="" />
+<parameter name="skipOtherTCsWhenFailed" value="1" />
+<classes>
+<class name="TestCases.TestTrialProduction.EnterTrialProductionFlow3_1"/>
+</classes>
+</test>
+<test name="33_AuditFlowNode_1" preserve-order="true">
+<parameter name="paramGroup" value="" />
+<parameter name="skipOtherTCsWhenFailed" value="1" />
+<classes>
+<class name="TestCases.TestTrialProduction.AuditFlowNode_1"/>
+</classes>
+</test>
+</suite>

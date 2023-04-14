@@ -1,0 +1,115 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="projectManagement" parallel="false" thread-count="1" preserve-order="true">
+<parameter name="driverID" value="projectManagement"/>
+<parameter name="browser" value="${browser}"/>
+<parameter name="record" value="${record}"/>
+<parameter name="productName" value="${productName}"/>
+<parameter name="projectName" value="${projectName}"/>
+<parameter name="implicitlyWait" value="${implicitlyWait}"/>
+<parameter name="closeBrowserFlag" value="${closeBrowserFlag}"/>
+<parameter name="usingOpenChrome" value="${usingOpenChrome}"/>
+<parameter name="taskId" value="${taskId}"/>
+<parameter name="recordId" value="${recordId}"/>
+<parameter name="suiteId" value="${suiteId}"/>
+<parameter name="delHistoryReport" value="${delHistoryReport}"/>
+<parameter name="stepRerun" value="${stepRerun}"/>
+<parameter name="caseRerun" value="${caseRerun}"/>
+<parameter name="suiteRerun" value="${suiteRerun}"/>
+<parameter name="maxRetry" value="${maxRetry}"/>
+<parameter name="skipOtherTCsWhenFailed" value="0"/>
+<listeners>
+<listener class-name="Framework.MyNewReport"/>
+<listener class-name="Framework.MyListener"/>
+</listeners>
+<test name="1_Login_2" preserve-order="true">
+<parameter name="paramGroup" value="" />
+<parameter name="skipOtherTCsWhenFailed" value="1" />
+<classes>
+<class name="TestCases.projectManagement.Login_2"/>
+</classes>
+</test>
+<test name="2_addProject_1" preserve-order="true">
+<parameter name="paramGroup" value="" />
+<parameter name="skipOtherTCsWhenFailed" value="1" />
+<classes>
+<class name="TestCases.projectManagement.addProject_1"/>
+</classes>
+</test>
+<test name="3_verifyMandatory_1" preserve-order="true">
+<parameter name="paramGroup" value="" />
+<parameter name="skipOtherTCsWhenFailed" value="1" />
+<classes>
+<class name="TestCases.projectManagement.verifyMandatory_1"/>
+</classes>
+</test>
+<test name="4_verifyAddProject_1" preserve-order="true">
+<parameter name="paramGroup" value="" />
+<parameter name="skipOtherTCsWhenFailed" value="1" />
+<classes>
+<class name="TestCases.projectManagement.verifyAddProject_1"/>
+</classes>
+</test>
+<test name="5_auditProject_1" preserve-order="true">
+<parameter name="paramGroup" value="" />
+<parameter name="skipOtherTCsWhenFailed" value="1" />
+<classes>
+<class name="TestCases.projectManagement.auditProject_1"/>
+</classes>
+</test>
+<test name="6_signProject_1" preserve-order="true">
+<parameter name="paramGroup" value="" />
+<parameter name="skipOtherTCsWhenFailed" value="1" />
+<classes>
+<class name="TestCases.projectManagement.signProject_1"/>
+</classes>
+</test>
+<test name="7_approveProject_1" preserve-order="true">
+<parameter name="paramGroup" value="" />
+<parameter name="skipOtherTCsWhenFailed" value="1" />
+<classes>
+<class name="TestCases.projectManagement.approveProject_1"/>
+</classes>
+</test>
+<test name="8_approveProject2_1" preserve-order="true">
+<parameter name="paramGroup" value="" />
+<parameter name="skipOtherTCsWhenFailed" value="1" />
+<classes>
+<class name="TestCases.projectManagement.approveProject2_1"/>
+</classes>
+</test>
+<test name="9_viewTask_1" preserve-order="true">
+<parameter name="paramGroup" value="" />
+<parameter name="skipOtherTCsWhenFailed" value="1" />
+<classes>
+<class name="TestCases.projectManagement.viewTask_1"/>
+</classes>
+</test>
+<test name="10_commitTask_1" preserve-order="true">
+<parameter name="paramGroup" value="" />
+<parameter name="skipOtherTCsWhenFailed" value="1" />
+<classes>
+<class name="TestCases.projectManagement.commitTask_1"/>
+</classes>
+</test>
+<test name="11_changeTask_1" preserve-order="true">
+<parameter name="paramGroup" value="" />
+<parameter name="skipOtherTCsWhenFailed" value="1" />
+<classes>
+<class name="TestCases.projectManagement.changeTask_1"/>
+</classes>
+</test>
+<test name="12_verifyTask1_1" preserve-order="true">
+<parameter name="paramGroup" value="" />
+<parameter name="skipOtherTCsWhenFailed" value="1" />
+<classes>
+<class name="TestCases.projectManagement.verifyTask1_1"/>
+</classes>
+</test>
+<test name="13_verifyTask2_1" preserve-order="true" enabled="false">
+<parameter name="paramGroup" value="" />
+<parameter name="skipOtherTCsWhenFailed" value="1" />
+<classes>
+<class name="TestCases.projectManagement.verifyTask2_1"/>
+</classes>
+</test>
+</suite>

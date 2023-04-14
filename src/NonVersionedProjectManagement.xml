@@ -1,0 +1,114 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="NonVersionedProjectManagement" parallel="false" thread-count="1" preserve-order="true">
+<parameter name="driverID" value="NonVersionedProjectManagement"/>
+<parameter name="browser" value="${browser}"/>
+<parameter name="record" value="${record}"/>
+<parameter name="productName" value="${productName}"/>
+<parameter name="projectName" value="${projectName}"/>
+<parameter name="implicitlyWait" value="${implicitlyWait}"/>
+<parameter name="closeBrowserFlag" value="${closeBrowserFlag}"/>
+<parameter name="usingOpenChrome" value="${usingOpenChrome}"/>
+<parameter name="taskId" value="${taskId}"/>
+<parameter name="recordId" value="${recordId}"/>
+<parameter name="suiteId" value="${suiteId}"/>
+<parameter name="delHistoryReport" value="${delHistoryReport}"/>
+<parameter name="stepRerun" value="${stepRerun}"/>
+<parameter name="caseRerun" value="${caseRerun}"/>
+<parameter name="suiteRerun" value="${suiteRerun}"/>
+<parameter name="maxRetry" value="${maxRetry}"/>
+<parameter name="skipOtherTCsWhenFailed" value="0"/>
+<listeners>
+<listener class-name="Framework.MyNewReport"/>
+<listener class-name="Framework.MyListener"/>
+</listeners>
+<test name="1_Login_4" preserve-order="true">
+<parameter name="paramGroup" value="" />
+<classes>
+<class name="TestCases.NonVersionedProjectManagement.Login_4"/>
+</classes>
+</test>
+<test name="2_addProject_2" preserve-order="true">
+<parameter name="paramGroup" value="" />
+<classes>
+<class name="TestCases.NonVersionedProjectManagement.addProject_2"/>
+</classes>
+</test>
+<test name="3_verifyMandatory_2" preserve-order="true">
+<parameter name="paramGroup" value="" />
+<classes>
+<class name="TestCases.NonVersionedProjectManagement.verifyMandatory_2"/>
+</classes>
+</test>
+<test name="4_verifyAddProject_2" preserve-order="true">
+<parameter name="paramGroup" value="" />
+<classes>
+<class name="TestCases.NonVersionedProjectManagement.verifyAddProject_2"/>
+</classes>
+</test>
+<test name="5_auditProject1_1" preserve-order="true">
+<parameter name="paramGroup" value="" />
+<classes>
+<class name="TestCases.NonVersionedProjectManagement.auditProject1_1"/>
+</classes>
+</test>
+<test name="6_auditProject2_1" preserve-order="true">
+<parameter name="paramGroup" value="" />
+<classes>
+<class name="TestCases.NonVersionedProjectManagement.auditProject2_1"/>
+</classes>
+</test>
+<test name="7_signProject1_1" preserve-order="true">
+<parameter name="paramGroup" value="" />
+<classes>
+<class name="TestCases.NonVersionedProjectManagement.signProject1_1"/>
+</classes>
+</test>
+<test name="8_signProject2_1" preserve-order="true">
+<parameter name="paramGroup" value="" />
+<classes>
+<class name="TestCases.NonVersionedProjectManagement.signProject2_1"/>
+</classes>
+</test>
+<test name="9_approveProject1_1" preserve-order="true">
+<parameter name="paramGroup" value="" />
+<classes>
+<class name="TestCases.NonVersionedProjectManagement.approveProject1_1"/>
+</classes>
+</test>
+<test name="10_approveProject2_2" preserve-order="true">
+<parameter name="paramGroup" value="" />
+<classes>
+<class name="TestCases.NonVersionedProjectManagement.approveProject2_2"/>
+</classes>
+</test>
+<test name="11_viewTask_2" preserve-order="true">
+<parameter name="paramGroup" value="" />
+<classes>
+<class name="TestCases.NonVersionedProjectManagement.viewTask_2"/>
+</classes>
+</test>
+<test name="12_commitTask_2" preserve-order="true">
+<parameter name="paramGroup" value="" />
+<classes>
+<class name="TestCases.NonVersionedProjectManagement.commitTask_2"/>
+</classes>
+</test>
+<test name="13_changeTask_2" preserve-order="true">
+<parameter name="paramGroup" value="" />
+<classes>
+<class name="TestCases.NonVersionedProjectManagement.changeTask_2"/>
+</classes>
+</test>
+<test name="14_verifyTask1_2" preserve-order="true">
+<parameter name="paramGroup" value="" />
+<classes>
+<class name="TestCases.NonVersionedProjectManagement.verifyTask1_2"/>
+</classes>
+</test>
+<test name="15_verifyTask2_2" preserve-order="true" enabled="false">
+<parameter name="paramGroup" value="" />
+<classes>
+<class name="TestCases.NonVersionedProjectManagement.verifyTask2_2"/>
+</classes>
+</test>
+</suite>

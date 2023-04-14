@@ -1,0 +1,174 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="TestMaterialRequisition" parallel="false" thread-count="1" preserve-order="true">
+<parameter name="driverID" value="TestMaterialRequisition"/>
+<parameter name="browser" value="${browser}"/>
+<parameter name="record" value="${record}"/>
+<parameter name="productName" value="${productName}"/>
+<parameter name="projectName" value="${projectName}"/>
+<parameter name="implicitlyWait" value="${implicitlyWait}"/>
+<parameter name="closeBrowserFlag" value="${closeBrowserFlag}"/>
+<parameter name="usingOpenChrome" value="${usingOpenChrome}"/>
+<parameter name="taskId" value="${taskId}"/>
+<parameter name="recordId" value="${recordId}"/>
+<parameter name="suiteId" value="${suiteId}"/>
+<parameter name="delHistoryReport" value="${delHistoryReport}"/>
+<parameter name="stepRerun" value="${stepRerun}"/>
+<parameter name="caseRerun" value="${caseRerun}"/>
+<parameter name="suiteRerun" value="${suiteRerun}"/>
+<parameter name="maxRetry" value="${maxRetry}"/>
+<parameter name="skipOtherTCsWhenFailed" value="0"/>
+<listeners>
+<listener class-name="Framework.MyNewReport"/>
+<listener class-name="Framework.MyListener"/>
+</listeners>
+<test name="1_OpenDPMThenLoginDPM_1" preserve-order="true">
+<parameter name="paramGroup" value="" />
+<classes>
+<class name="TestCases.TestMaterialRequisition.OpenDPMThenLoginDPM_1"/>
+</classes>
+</test>
+<test name="2_EnterMainPage_1" preserve-order="true">
+<parameter name="paramGroup" value="" />
+<classes>
+<class name="TestCases.TestMaterialRequisition.EnterMainPage_1"/>
+</classes>
+</test>
+<test name="3_EnterMaterialRequisition_1" preserve-order="true">
+<parameter name="paramGroup" value="" />
+<classes>
+<class name="TestCases.TestMaterialRequisition.EnterMaterialRequisition_1"/>
+</classes>
+</test>
+<test name="4_CreateMaterialRequisitionPage_1" preserve-order="true">
+<parameter name="paramGroup" value="" />
+<classes>
+<class name="TestCases.TestMaterialRequisition.CreateMaterialRequisitionPage_1"/>
+</classes>
+</test>
+<test name="5_ChooseProject_1" preserve-order="true">
+<parameter name="paramGroup" value="" />
+<classes>
+<class name="TestCases.TestMaterialRequisition.ChooseProject_1"/>
+</classes>
+</test>
+<test name="6_ReasonOfRequisition_1" preserve-order="true">
+<parameter name="paramGroup" value="" />
+<classes>
+<class name="TestCases.TestMaterialRequisition.ReasonOfRequisition_1"/>
+</classes>
+</test>
+<test name="7_TitleOfMaterialRequisition_1" preserve-order="true">
+<parameter name="paramGroup" value="" />
+<classes>
+<class name="TestCases.TestMaterialRequisition.TitleOfMaterialRequisition_1"/>
+</classes>
+</test>
+<test name="8_ChooseCollarType_1" preserve-order="true">
+<parameter name="paramGroup" value="" />
+<classes>
+<class name="TestCases.TestMaterialRequisition.ChooseCollarType_1"/>
+</classes>
+</test>
+<test name="9_ChooseAccountAliases_1" preserve-order="true">
+<parameter name="paramGroup" value="" />
+<classes>
+<class name="TestCases.TestMaterialRequisition.ChooseAccountAliases_1"/>
+</classes>
+</test>
+<test name="10_ChooseLeadInOrganization_1" preserve-order="true">
+<parameter name="paramGroup" value="" />
+<classes>
+<class name="TestCases.TestMaterialRequisition.ChooseLeadInOrganization_1"/>
+</classes>
+</test>
+<test name="11_ChooseCostCenter_1" preserve-order="true">
+<parameter name="paramGroup" value="" />
+<classes>
+<class name="TestCases.TestMaterialRequisition.ChooseCostCenter_1"/>
+</classes>
+</test>
+<test name="12_ChooseLeadOutOrganization_1" preserve-order="true">
+<parameter name="paramGroup" value="" />
+<classes>
+<class name="TestCases.TestMaterialRequisition.ChooseLeadOutOrganization_1"/>
+</classes>
+</test>
+<test name="13_RequirementList_1" preserve-order="true">
+<parameter name="paramGroup" value="" />
+<classes>
+<class name="TestCases.TestMaterialRequisition.RequirementList_1"/>
+</classes>
+</test>
+<test name="14_FillInRequirementListInfo_1" preserve-order="true">
+<parameter name="paramGroup" value="" />
+<classes>
+<class name="TestCases.TestMaterialRequisition.FillInRequirementListInfo_1"/>
+</classes>
+</test>
+<test name="15_NextSetPage_1" preserve-order="true">
+<parameter name="paramGroup" value="" />
+<classes>
+<class name="TestCases.TestMaterialRequisition.NextSetPage_1"/>
+</classes>
+</test>
+<test name="16_ChooseDepartmentManager_1" preserve-order="true">
+<parameter name="paramGroup" value="" />
+<classes>
+<class name="TestCases.TestMaterialRequisition.ChooseDepartmentManager_1"/>
+</classes>
+</test>
+<test name="17_ChoosePurchaserAuditor_1" preserve-order="true">
+<parameter name="paramGroup" value="" />
+<classes>
+<class name="TestCases.TestMaterialRequisition.ChoosePurchaserAuditor_1"/>
+</classes>
+</test>
+<test name="18_ChooseFinancialAuditor_1" preserve-order="true">
+<parameter name="paramGroup" value="" />
+<classes>
+<class name="TestCases.TestMaterialRequisition.ChooseFinancialAuditor_1"/>
+</classes>
+</test>
+<test name="19_StartRequisitionFlow_1" preserve-order="true">
+<parameter name="paramGroup" value="" />
+<classes>
+<class name="TestCases.TestMaterialRequisition.StartRequisitionFlow_1"/>
+</classes>
+</test>
+<test name="20_ChooseRequisitionFlowName1_1" preserve-order="true">
+<parameter name="paramGroup" value="" />
+<classes>
+<class name="TestCases.TestMaterialRequisition.ChooseRequisitionFlowName1_1"/>
+</classes>
+</test>
+<test name="21_EnterRequisitionFlow1_1" preserve-order="true">
+<parameter name="paramGroup" value="" />
+<classes>
+<class name="TestCases.TestMaterialRequisition.EnterRequisitionFlow1_1"/>
+</classes>
+</test>
+<test name="22_ReviewFlowNode1_1" preserve-order="true">
+<parameter name="paramGroup" value="" />
+<classes>
+<class name="TestCases.TestMaterialRequisition.ReviewFlowNode1_1"/>
+</classes>
+</test>
+<test name="23_ChooseRequisitionFlowName2_1" preserve-order="true">
+<parameter name="paramGroup" value="" />
+<classes>
+<class name="TestCases.TestMaterialRequisition.ChooseRequisitionFlowName2_1"/>
+</classes>
+</test>
+<test name="24_EnterRequisitionFlow2_1" preserve-order="true">
+<parameter name="paramGroup" value="" />
+<classes>
+<class name="TestCases.TestMaterialRequisition.EnterRequisitionFlow2_1"/>
+</classes>
+</test>
+<test name="25_ReviewFlowNode2_1" preserve-order="true">
+<parameter name="paramGroup" value="" />
+<classes>
+<class name="TestCases.TestMaterialRequisition.ReviewFlowNode2_1"/>
+</classes>
+</test>
+</suite>

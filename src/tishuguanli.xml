@@ -1,0 +1,102 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="提数管理" parallel="false" thread-count="1" preserve-order="true">
+<parameter name="driverID" value="提数管理"/>
+<parameter name="browser" value="${browser}"/>
+<parameter name="record" value="${record}"/>
+<parameter name="productName" value="${productName}"/>
+<parameter name="projectName" value="${projectName}"/>
+<parameter name="implicitlyWait" value="${implicitlyWait}"/>
+<parameter name="closeBrowserFlag" value="${closeBrowserFlag}"/>
+<parameter name="usingOpenChrome" value="${usingOpenChrome}"/>
+<parameter name="taskId" value="${taskId}"/>
+<parameter name="recordId" value="${recordId}"/>
+<parameter name="suiteId" value="${suiteId}"/>
+<parameter name="delHistoryReport" value="${delHistoryReport}"/>
+<parameter name="stepRerun" value="${stepRerun}"/>
+<parameter name="caseRerun" value="${caseRerun}"/>
+<parameter name="suiteRerun" value="${suiteRerun}"/>
+<parameter name="maxRetry" value="${maxRetry}"/>
+<parameter name="skipOtherTCsWhenFailed" value="0"/>
+<listeners>
+<listener class-name="Framework.MyNewReport"/>
+<listener class-name="Framework.MyListener"/>
+</listeners>
+<test name="1_Login_9" preserve-order="true">
+<parameter name="paramGroup" value="url_uat" />
+<classes>
+<class name="TestCases.WithdrawalManagement.Login_9"/>
+</classes>
+</test>
+<test name="2_WM_editNumberPrincipal_1" preserve-order="true">
+<parameter name="paramGroup" value="" />
+<classes>
+<class name="TestCases.WithdrawalManagement.WM_editNumberPrincipal_1"/>
+</classes>
+</test>
+<test name="3_WM_editNumberAccount_1" preserve-order="true">
+<parameter name="paramGroup" value="" />
+<classes>
+<class name="TestCases.WithdrawalManagement.WM_editNumberAccount_1"/>
+</classes>
+</test>
+<test name="4_WM_editNumberManagement_1" preserve-order="true">
+<parameter name="paramGroup" value="" />
+<classes>
+<class name="TestCases.WithdrawalManagement.WM_editNumberManagement_1"/>
+</classes>
+</test>
+<test name="5_WM_exportNumberManagement_1" preserve-order="true">
+<parameter name="paramGroup" value="" />
+<classes>
+<class name="TestCases.WithdrawalManagement.WM_exportNumberManagement_1"/>
+</classes>
+</test>
+<test name="6_WM_refreshNumberManagement_1" preserve-order="true">
+<parameter name="paramGroup" value="" />
+<classes>
+<class name="TestCases.WithdrawalManagement.WM_refreshNumberManagement_1"/>
+</classes>
+</test>
+<test name="7_WM_verifyNumberManagement_1" preserve-order="true">
+<parameter name="paramGroup" value="" />
+<classes>
+<class name="TestCases.WithdrawalManagement.WM_verifyNumberManagement_1"/>
+</classes>
+</test>
+<test name="8_WM_numberManagementInput_1" preserve-order="true">
+<parameter name="paramGroup" value="" />
+<classes>
+<class name="TestCases.WithdrawalManagement.WM_numberManagementInput_1"/>
+</classes>
+</test>
+<test name="9_WM_verifyMyCreation_1" preserve-order="true">
+<parameter name="paramGroup" value="" />
+<classes>
+<class name="TestCases.WithdrawalManagement.WM_verifyMyCreation_1"/>
+</classes>
+</test>
+<test name="10_WM_principalReview_1" preserve-order="true">
+<parameter name="paramGroup" value="" />
+<classes>
+<class name="TestCases.WithdrawalManagement.WM_principalReview_1"/>
+</classes>
+</test>
+<test name="11_WM_ministerReview_1" preserve-order="true">
+<parameter name="paramGroup" value="" />
+<classes>
+<class name="TestCases.WithdrawalManagement.WM_ministerReview_1"/>
+</classes>
+</test>
+<test name="12_WM_Review_1" preserve-order="true">
+<parameter name="paramGroup" value="" />
+<classes>
+<class name="TestCases.WithdrawalManagement.WM_Review_1"/>
+</classes>
+</test>
+<test name="13_WM_numberManagerReview_1" preserve-order="true">
+<parameter name="paramGroup" value="" />
+<classes>
+<class name="TestCases.WithdrawalManagement.WM_numberManagerReview_1"/>
+</classes>
+</test>
+</suite>

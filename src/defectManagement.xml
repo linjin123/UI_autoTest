@@ -1,0 +1,114 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="defectManagement" parallel="false" thread-count="1" preserve-order="true">
+<parameter name="driverID" value="defectManagement"/>
+<parameter name="browser" value="${browser}"/>
+<parameter name="record" value="${record}"/>
+<parameter name="productName" value="${productName}"/>
+<parameter name="projectName" value="${projectName}"/>
+<parameter name="implicitlyWait" value="${implicitlyWait}"/>
+<parameter name="closeBrowserFlag" value="${closeBrowserFlag}"/>
+<parameter name="usingOpenChrome" value="${usingOpenChrome}"/>
+<parameter name="taskId" value="${taskId}"/>
+<parameter name="recordId" value="${recordId}"/>
+<parameter name="suiteId" value="${suiteId}"/>
+<parameter name="delHistoryReport" value="${delHistoryReport}"/>
+<parameter name="stepRerun" value="${stepRerun}"/>
+<parameter name="caseRerun" value="${caseRerun}"/>
+<parameter name="suiteRerun" value="${suiteRerun}"/>
+<parameter name="maxRetry" value="${maxRetry}"/>
+<parameter name="skipOtherTCsWhenFailed" value="0"/>
+<listeners>
+<listener class-name="Framework.MyNewReport"/>
+<listener class-name="Framework.MyListener"/>
+</listeners>
+<test name="1_Login_3" preserve-order="true">
+<parameter name="paramGroup" value="" />
+<classes>
+<class name="TestCases.defectManagement.Login_3"/>
+</classes>
+</test>
+<test name="2_NewIotDefectfail_1" preserve-order="true">
+<parameter name="paramGroup" value="" />
+<classes>
+<class name="TestCases.defectManagement.NewIotDefectfail_1"/>
+</classes>
+</test>
+<test name="3_IotDefectManagement_1" preserve-order="true">
+<parameter name="paramGroup" value="newdefect1" />
+<classes>
+<class name="TestCases.defectManagement.IotDefectManagement_1"/>
+</classes>
+</test>
+<test name="4_IotDefectManagement_1" preserve-order="true">
+<parameter name="paramGroup" value="newdefect2" />
+<classes>
+<class name="TestCases.defectManagement.IotDefectManagement_1"/>
+</classes>
+</test>
+<test name="5_IotDefectManagement_1" preserve-order="true">
+<parameter name="paramGroup" value="newdefect3" />
+<classes>
+<class name="TestCases.defectManagement.IotDefectManagement_1"/>
+</classes>
+</test>
+<test name="6_IotNormalProcess_1" preserve-order="true">
+<parameter name="paramGroup" value="" />
+<classes>
+<class name="TestCases.defectManagement.IotNormalProcess_1"/>
+</classes>
+</test>
+<test name="7_IotShelvingProcess_1" preserve-order="true">
+<parameter name="paramGroup" value="" />
+<classes>
+<class name="TestCases.defectManagement.IotShelvingProcess_1"/>
+</classes>
+</test>
+<test name="8_IotAbandonedProcess_1" preserve-order="true">
+<parameter name="paramGroup" value="" />
+<classes>
+<class name="TestCases.defectManagement.IotAbandonedProcess_1"/>
+</classes>
+</test>
+<test name="9_NotIotDefectManagement_1" preserve-order="true">
+<parameter name="paramGroup" value="newdefect4" />
+<classes>
+<class name="TestCases.defectManagement.NotIotDefectManagement_1"/>
+</classes>
+</test>
+<test name="10_NotIotDefectManagement_1" preserve-order="true">
+<parameter name="paramGroup" value="newdefect5" />
+<classes>
+<class name="TestCases.defectManagement.NotIotDefectManagement_1"/>
+</classes>
+</test>
+<test name="11_NotIotDefectManagement_1" preserve-order="true">
+<parameter name="paramGroup" value="newdefect6" />
+<classes>
+<class name="TestCases.defectManagement.NotIotDefectManagement_1"/>
+</classes>
+</test>
+<test name="12_NotIotNormalProcess1_1" preserve-order="true">
+<parameter name="paramGroup" value="" />
+<classes>
+<class name="TestCases.defectManagement.NotIotNormalProcess1_1"/>
+</classes>
+</test>
+<test name="13_NotIotNormalProcess2_1" preserve-order="true">
+<parameter name="paramGroup" value="" />
+<classes>
+<class name="TestCases.defectManagement.NotIotNormalProcess2_1"/>
+</classes>
+</test>
+<test name="14_NotIotShelvingProcess_1" preserve-order="true">
+<parameter name="paramGroup" value="" />
+<classes>
+<class name="TestCases.defectManagement.NotIotShelvingProcess_1"/>
+</classes>
+</test>
+<test name="15_NotIotAbandonedProcess_1" preserve-order="true">
+<parameter name="paramGroup" value="" />
+<classes>
+<class name="TestCases.defectManagement.NotIotAbandonedProcess_1"/>
+</classes>
+</test>
+</suite>

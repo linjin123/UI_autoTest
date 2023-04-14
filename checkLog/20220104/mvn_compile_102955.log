@@ -1,0 +1,19 @@
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] ----------------------< SeleniumJava:UI_autoTest >----------------------
+[INFO] Building UI_autoTest 2.0-SNAPSHOT
+[INFO] --------------------------------[ jar ]---------------------------------
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-resources-plugin/2.6/maven-resources-plugin-2.6.pom
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 0.374 s
+[INFO] Finished at: 2022-01-04T10:29:56+08:00
+[INFO] ------------------------------------------------------------------------
+[ERROR] Plugin org.apache.maven.plugins:maven-resources-plugin:2.6 or one of its dependencies could not be resolved: Failed to read artifact descriptor for org.apache.maven.plugins:maven-resources-plugin:jar:2.6: Could not transfer artifact org.apache.maven.plugins:maven-resources-plugin:pom:2.6 from/to central (https://repo.maven.apache.org/maven2): Connect to repo.maven.apache.org:443 [repo.maven.apache.org/151.101.196.215] failed: 拒绝连接 (Connection refused) -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/PluginResolutionException

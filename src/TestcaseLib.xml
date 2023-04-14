@@ -1,0 +1,174 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="TestcaseLib" parallel="false" thread-count="1" preserve-order="true">
+<parameter name="driverID" value="TestcaseLib"/>
+<parameter name="browser" value="${browser}"/>
+<parameter name="record" value="${record}"/>
+<parameter name="productName" value="${productName}"/>
+<parameter name="projectName" value="${projectName}"/>
+<parameter name="implicitlyWait" value="${implicitlyWait}"/>
+<parameter name="closeBrowserFlag" value="${closeBrowserFlag}"/>
+<parameter name="usingOpenChrome" value="${usingOpenChrome}"/>
+<parameter name="taskId" value="${taskId}"/>
+<parameter name="recordId" value="${recordId}"/>
+<parameter name="suiteId" value="${suiteId}"/>
+<parameter name="delHistoryReport" value="${delHistoryReport}"/>
+<parameter name="stepRerun" value="${stepRerun}"/>
+<parameter name="caseRerun" value="${caseRerun}"/>
+<parameter name="suiteRerun" value="${suiteRerun}"/>
+<parameter name="maxRetry" value="${maxRetry}"/>
+<parameter name="skipOtherTCsWhenFailed" value="0"/>
+<listeners>
+<listener class-name="Framework.MyNewReport"/>
+<listener class-name="Framework.MyListener"/>
+</listeners>
+<test name="1_Login_8" preserve-order="true">
+<parameter name="paramGroup" value="" />
+<classes>
+<class name="TestCases.newProduct.Login_8"/>
+</classes>
+</test>
+<test name="2_addProduction_2" preserve-order="true">
+<parameter name="paramGroup" value="" />
+<classes>
+<class name="TestCases.newProduct.addProduction_2"/>
+</classes>
+</test>
+<test name="3_auditProduction_2" preserve-order="true">
+<parameter name="paramGroup" value="" />
+<classes>
+<class name="TestCases.newProduct.auditProduction_2"/>
+</classes>
+</test>
+<test name="4_signProduction_2" preserve-order="true">
+<parameter name="paramGroup" value="" />
+<classes>
+<class name="TestCases.newProduct.signProduction_2"/>
+</classes>
+</test>
+<test name="5_Login_6" preserve-order="true" enabled="false">
+<parameter name="paramGroup" value="" />
+<classes>
+<class name="TestCases.TestcaseLib.Login_6"/>
+</classes>
+</test>
+<test name="6_verifyMandatory1_1" preserve-order="true">
+<parameter name="paramGroup" value="" />
+<classes>
+<class name="TestCases.TestcaseLib.verifyMandatory1_1"/>
+</classes>
+</test>
+<test name="7_addTestcase_private_1" preserve-order="true">
+<parameter name="paramGroup" value="" />
+<classes>
+<class name="TestCases.TestcaseLib.addTestcase_private_1"/>
+</classes>
+</test>
+<test name="8_copyTestcase_private_1" preserve-order="true">
+<parameter name="paramGroup" value="" />
+<classes>
+<class name="TestCases.TestcaseLib.copyTestcase_private_1"/>
+</classes>
+</test>
+<test name="9_SwitchToMine_private_1" preserve-order="true">
+<parameter name="paramGroup" value="" />
+<classes>
+<class name="TestCases.TestcaseLib.SwitchToMine_private_1"/>
+</classes>
+</test>
+<test name="10_verifyMandatory2_1" preserve-order="true">
+<parameter name="paramGroup" value="" />
+<classes>
+<class name="TestCases.TestcaseLib.verifyMandatory2_1"/>
+</classes>
+</test>
+<test name="11_addTestcase_public_1" preserve-order="true">
+<parameter name="paramGroup" value="" />
+<classes>
+<class name="TestCases.TestcaseLib.addTestcase_public_1"/>
+</classes>
+</test>
+<test name="12_quoteTestcase_public_1" preserve-order="true">
+<parameter name="paramGroup" value="" />
+<classes>
+<class name="TestCases.TestcaseLib.quoteTestcase_public_1"/>
+</classes>
+</test>
+<test name="13_revokeRelease_public_1" preserve-order="true">
+<parameter name="paramGroup" value="" />
+<classes>
+<class name="TestCases.TestcaseLib.revokeRelease_public_1"/>
+</classes>
+</test>
+<test name="14_quoteTestcase_private_1" preserve-order="true">
+<parameter name="paramGroup" value="" />
+<classes>
+<class name="TestCases.TestcaseLib.quoteTestcase_private_1"/>
+</classes>
+</test>
+<test name="15_revokeRelease_private_1" preserve-order="true">
+<parameter name="paramGroup" value="" />
+<classes>
+<class name="TestCases.TestcaseLib.revokeRelease_private_1"/>
+</classes>
+</test>
+<test name="16_saveToPublicTestcase_1" preserve-order="true">
+<parameter name="paramGroup" value="" />
+<classes>
+<class name="TestCases.TestcaseLib.saveToPublicTestcase_1"/>
+</classes>
+</test>
+<test name="17_saveToPublicTestcase_approve_1" preserve-order="true">
+<parameter name="paramGroup" value="" />
+<classes>
+<class name="TestCases.TestcaseLib.saveToPublicTestcase_approve_1"/>
+</classes>
+</test>
+<test name="18_newGroupForMoudlar_1" preserve-order="true">
+<parameter name="paramGroup" value="" />
+<classes>
+<class name="TestCases.TestcaseLib.newGroupForMoudlar_1"/>
+</classes>
+</test>
+<test name="19_newSameLevelGroup_1" preserve-order="true">
+<parameter name="paramGroup" value="" />
+<classes>
+<class name="TestCases.TestcaseLib.newSameLevelGroup_1"/>
+</classes>
+</test>
+<test name="20_moveTestcase_1" preserve-order="true">
+<parameter name="paramGroup" value="" />
+<classes>
+<class name="TestCases.TestcaseLib.moveTestcase_1"/>
+</classes>
+</test>
+<test name="21_selectGroup_1" preserve-order="true">
+<parameter name="paramGroup" value="" />
+<classes>
+<class name="TestCases.TestcaseLib.selectGroup_1"/>
+</classes>
+</test>
+<test name="22_newModular_1" preserve-order="true">
+<parameter name="paramGroup" value="" />
+<classes>
+<class name="TestCases.TestcaseLib.newModular_1"/>
+</classes>
+</test>
+<test name="23_dismiss_oneGroup_1" preserve-order="true">
+<parameter name="paramGroup" value="" />
+<classes>
+<class name="TestCases.TestcaseLib.dismiss_oneGroup_1"/>
+</classes>
+</test>
+<test name="24_dismiss_GroupForMoudlar_1" preserve-order="true">
+<parameter name="paramGroup" value="" />
+<classes>
+<class name="TestCases.TestcaseLib.dismiss_GroupForMoudlar_1"/>
+</classes>
+</test>
+<test name="25_delNewMoudlar_1" preserve-order="true">
+<parameter name="paramGroup" value="" />
+<classes>
+<class name="TestCases.TestcaseLib.delNewMoudlar_1"/>
+</classes>
+</test>
+</suite>

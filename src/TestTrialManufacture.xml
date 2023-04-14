@@ -1,0 +1,198 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="TestTrialManufacture" parallel="false" thread-count="1" preserve-order="true">
+<parameter name="driverID" value="TestTrialManufacture"/>
+<parameter name="browser" value="${browser}"/>
+<parameter name="record" value="${record}"/>
+<parameter name="productName" value="${productName}"/>
+<parameter name="projectName" value="${projectName}"/>
+<parameter name="implicitlyWait" value="${implicitlyWait}"/>
+<parameter name="closeBrowserFlag" value="${closeBrowserFlag}"/>
+<parameter name="usingOpenChrome" value="${usingOpenChrome}"/>
+<parameter name="taskId" value="${taskId}"/>
+<parameter name="recordId" value="${recordId}"/>
+<parameter name="suiteId" value="${suiteId}"/>
+<parameter name="delHistoryReport" value="${delHistoryReport}"/>
+<parameter name="stepRerun" value="${stepRerun}"/>
+<parameter name="caseRerun" value="${caseRerun}"/>
+<parameter name="suiteRerun" value="${suiteRerun}"/>
+<parameter name="maxRetry" value="${maxRetry}"/>
+<parameter name="skipOtherTCsWhenFailed" value="0"/>
+<listeners>
+<listener class-name="Framework.MyNewReport"/>
+<listener class-name="Framework.MyListener"/>
+</listeners>
+<test name="1_OpenDPMThenLoginDPM_4" preserve-order="true">
+<parameter name="paramGroup" value="" />
+<classes>
+<class name="TestCases.TestTrialManufacture.OpenDPMThenLoginDPM_4"/>
+</classes>
+</test>
+<test name="2_SelectMenu_1" preserve-order="true">
+<parameter name="paramGroup" value="" />
+<classes>
+<class name="TestCases.TestTrialManufacture.SelectMenu_1"/>
+</classes>
+</test>
+<test name="3_CreateTrialManufacture_1" preserve-order="true">
+<parameter name="paramGroup" value="" />
+<classes>
+<class name="TestCases.TestTrialManufacture.CreateTrialManufacture_1"/>
+</classes>
+</test>
+<test name="4_FillInTrialManufactureInfo_1" preserve-order="true">
+<parameter name="paramGroup" value="" />
+<classes>
+<class name="TestCases.TestTrialManufacture.FillInTrialManufactureInfo_1"/>
+</classes>
+</test>
+<test name="5_ChooseItems_1" preserve-order="true">
+<parameter name="paramGroup" value="" />
+<classes>
+<class name="TestCases.TestTrialManufacture.ChooseItems_1"/>
+</classes>
+</test>
+<test name="6_LinkProductInfo_1" preserve-order="true">
+<parameter name="paramGroup" value="" />
+<classes>
+<class name="TestCases.TestTrialManufacture.LinkProductInfo_1"/>
+</classes>
+</test>
+<test name="7_ChooseInventoryOrganization_1" preserve-order="true">
+<parameter name="paramGroup" value="" />
+<classes>
+<class name="TestCases.TestTrialManufacture.ChooseInventoryOrganization_1"/>
+</classes>
+</test>
+<test name="8_ChoosePlanningGroup_1" preserve-order="true">
+<parameter name="paramGroup" value="" />
+<classes>
+<class name="TestCases.TestTrialManufacture.ChoosePlanningGroup_1"/>
+</classes>
+</test>
+<test name="9_ReferenceProductCode_1" preserve-order="true">
+<parameter name="paramGroup" value="" />
+<classes>
+<class name="TestCases.TestTrialManufacture.ReferenceProductCode_1"/>
+</classes>
+</test>
+<test name="10_PlanStartDate_1" preserve-order="true">
+<parameter name="paramGroup" value="" />
+<classes>
+<class name="TestCases.TestTrialManufacture.PlanStartDate_1"/>
+</classes>
+</test>
+<test name="11_PlanEndDate_1" preserve-order="true">
+<parameter name="paramGroup" value="" />
+<classes>
+<class name="TestCases.TestTrialManufacture.PlanEndDate_1"/>
+</classes>
+</test>
+<test name="12_RequirementInformation_1" preserve-order="true">
+<parameter name="paramGroup" value="" />
+<classes>
+<class name="TestCases.TestTrialManufacture.RequirementInformation_1"/>
+</classes>
+</test>
+<test name="13_TechnologyWorkflowPreparation_1" preserve-order="true">
+<parameter name="paramGroup" value="" />
+<classes>
+<class name="TestCases.TestTrialManufacture.TechnologyWorkflowPreparation_1"/>
+</classes>
+</test>
+<test name="14_ChoosePIC_1" preserve-order="true">
+<parameter name="paramGroup" value="" />
+<classes>
+<class name="TestCases.TestTrialManufacture.ChoosePIC_1"/>
+</classes>
+</test>
+<test name="15_NextStep_1" preserve-order="true">
+<parameter name="paramGroup" value="" />
+<classes>
+<class name="TestCases.TestTrialManufacture.NextStep_1"/>
+</classes>
+</test>
+<test name="16_ChooseProjectManagers_1" preserve-order="true">
+<parameter name="paramGroup" value="" />
+<classes>
+<class name="TestCases.TestTrialManufacture.ChooseProjectManagers_1"/>
+</classes>
+</test>
+<test name="17_ChooseProjectManagement_2" preserve-order="true">
+<parameter name="paramGroup" value="" />
+<classes>
+<class name="TestCases.TestTrialManufacture.ChooseProjectManagement_2"/>
+</classes>
+</test>
+<test name="18_ChoosePilotRepresentative_1" preserve-order="true">
+<parameter name="paramGroup" value="" />
+<classes>
+<class name="TestCases.TestTrialManufacture.ChoosePilotRepresentative_1"/>
+</classes>
+</test>
+<test name="19_ChooseDepartmentModuleLeader_1" preserve-order="true" enabled="false">
+<parameter name="paramGroup" value="" />
+<classes>
+<class name="TestCases.TestTrialManufacture.ChooseDepartmentModuleLeader_1"/>
+</classes>
+</test>
+<test name="20_ChooseFinancialRepresentative_1" preserve-order="true">
+<parameter name="paramGroup" value="" />
+<classes>
+<class name="TestCases.TestTrialManufacture.ChooseFinancialRepresentative_1"/>
+</classes>
+</test>
+<test name="21_ChooseProductionPlanner_1" preserve-order="true">
+<parameter name="paramGroup" value="" />
+<classes>
+<class name="TestCases.TestTrialManufacture.ChooseProductionPlanner_1"/>
+</classes>
+</test>
+<test name="22_ChooseReceiverAfterProcessRelease_1" preserve-order="true">
+<parameter name="paramGroup" value="" />
+<classes>
+<class name="TestCases.TestTrialManufacture.ChooseReceiverAfterProcessRelease_1"/>
+</classes>
+</test>
+<test name="23_StartFlow_2" preserve-order="true">
+<parameter name="paramGroup" value="" />
+<classes>
+<class name="TestCases.TestTrialManufacture.StartFlow_2"/>
+</classes>
+</test>
+<test name="24_ChooseTrialManufactureFlowName1_1" preserve-order="true">
+<parameter name="paramGroup" value="" />
+<classes>
+<class name="TestCases.TestTrialManufacture.ChooseTrialManufactureFlowName1_1"/>
+</classes>
+</test>
+<test name="25_EnterTrialManufactureFlow1_1" preserve-order="true">
+<parameter name="paramGroup" value="" />
+<classes>
+<class name="TestCases.TestTrialManufacture.EnterTrialManufactureFlow1_1"/>
+</classes>
+</test>
+<test name="26_SubmitAuditFlowNode_1" preserve-order="true">
+<parameter name="paramGroup" value="" />
+<classes>
+<class name="TestCases.TestTrialManufacture.SubmitAuditFlowNode_1"/>
+</classes>
+</test>
+<test name="27_ChooseTrialManufactureFlowName2_1" preserve-order="true">
+<parameter name="paramGroup" value="" />
+<classes>
+<class name="TestCases.TestTrialManufacture.ChooseTrialManufactureFlowName2_1"/>
+</classes>
+</test>
+<test name="28_EnterTrialManufactureFlow2_1" preserve-order="true">
+<parameter name="paramGroup" value="" />
+<classes>
+<class name="TestCases.TestTrialManufacture.EnterTrialManufactureFlow2_1"/>
+</classes>
+</test>
+<test name="29_ReleaseFlowNode_1" preserve-order="true">
+<parameter name="paramGroup" value="" />
+<classes>
+<class name="TestCases.TestTrialManufacture.ReleaseFlowNode_1"/>
+</classes>
+</test>
+</suite>

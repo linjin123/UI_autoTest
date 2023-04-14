@@ -1,0 +1,72 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="IoTVersionedProjectManagement" parallel="false" thread-count="1" preserve-order="true">
+<parameter name="driverID" value="IoTVersionedProjectManagement"/>
+<parameter name="browser" value="${browser}"/>
+<parameter name="record" value="${record}"/>
+<parameter name="productName" value="${productName}"/>
+<parameter name="projectName" value="${projectName}"/>
+<parameter name="implicitlyWait" value="${implicitlyWait}"/>
+<parameter name="closeBrowserFlag" value="${closeBrowserFlag}"/>
+<parameter name="usingOpenChrome" value="${usingOpenChrome}"/>
+<parameter name="taskId" value="${taskId}"/>
+<parameter name="recordId" value="${recordId}"/>
+<parameter name="suiteId" value="${suiteId}"/>
+<parameter name="delHistoryReport" value="${delHistoryReport}"/>
+<parameter name="stepRerun" value="${stepRerun}"/>
+<parameter name="caseRerun" value="${caseRerun}"/>
+<parameter name="suiteRerun" value="${suiteRerun}"/>
+<parameter name="maxRetry" value="${maxRetry}"/>
+<parameter name="skipOtherTCsWhenFailed" value="0"/>
+<listeners>
+<listener class-name="Framework.MyNewReport"/>
+<listener class-name="Framework.MyListener"/>
+</listeners>
+<test name="1_Login_5" preserve-order="true">
+<parameter name="paramGroup" value="" />
+<classes>
+<class name="TestCases.IoTVersionedProjectManagement.Login_5"/>
+</classes>
+</test>
+<test name="2_addProject_3" preserve-order="true">
+<parameter name="paramGroup" value="" />
+<classes>
+<class name="TestCases.IoTVersionedProjectManagement.addProject_3"/>
+</classes>
+</test>
+<test name="3_verifyMandatory_3" preserve-order="true">
+<parameter name="paramGroup" value="" />
+<classes>
+<class name="TestCases.IoTVersionedProjectManagement.verifyMandatory_3"/>
+</classes>
+</test>
+<test name="4_verifyAddProject1_1" preserve-order="true">
+<parameter name="paramGroup" value="" />
+<classes>
+<class name="TestCases.IoTVersionedProjectManagement.verifyAddProject1_1"/>
+</classes>
+</test>
+<test name="5_auditProject1_2" preserve-order="true">
+<parameter name="paramGroup" value="" />
+<classes>
+<class name="TestCases.IoTVersionedProjectManagement.auditProject1_2"/>
+</classes>
+</test>
+<test name="6_auditProject2_2" preserve-order="true">
+<parameter name="paramGroup" value="" />
+<classes>
+<class name="TestCases.IoTVersionedProjectManagement.auditProject2_2"/>
+</classes>
+</test>
+<test name="7_signProject1_2" preserve-order="true">
+<parameter name="paramGroup" value="" />
+<classes>
+<class name="TestCases.IoTVersionedProjectManagement.signProject1_2"/>
+</classes>
+</test>
+<test name="8_verifyAddProject2_1" preserve-order="true">
+<parameter name="paramGroup" value="" />
+<classes>
+<class name="TestCases.IoTVersionedProjectManagement.verifyAddProject2_1"/>
+</classes>
+</test>
+</suite>

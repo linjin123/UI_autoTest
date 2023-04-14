@@ -1,0 +1,258 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="TestProjectCreation" parallel="false" thread-count="1" preserve-order="true">
+<parameter name="driverID" value="TestProjectCreation"/>
+<parameter name="browser" value="${browser}"/>
+<parameter name="record" value="${record}"/>
+<parameter name="productName" value="${productName}"/>
+<parameter name="projectName" value="${projectName}"/>
+<parameter name="implicitlyWait" value="${implicitlyWait}"/>
+<parameter name="closeBrowserFlag" value="${closeBrowserFlag}"/>
+<parameter name="usingOpenChrome" value="${usingOpenChrome}"/>
+<parameter name="taskId" value="${taskId}"/>
+<parameter name="recordId" value="${recordId}"/>
+<parameter name="suiteId" value="${suiteId}"/>
+<parameter name="delHistoryReport" value="${delHistoryReport}"/>
+<parameter name="stepRerun" value="${stepRerun}"/>
+<parameter name="caseRerun" value="${caseRerun}"/>
+<parameter name="suiteRerun" value="${suiteRerun}"/>
+<parameter name="maxRetry" value="${maxRetry}"/>
+<parameter name="skipOtherTCsWhenFailed" value="0"/>
+<listeners>
+<listener class-name="Framework.MyNewReport"/>
+<listener class-name="Framework.MyListener"/>
+</listeners>
+<test name="1_OpenGPMThenLoginGPM_1" preserve-order="true">
+<parameter name="paramGroup" value="" />
+<classes>
+<class name="TestCases.TestProjectCreation.OpenGPMThenLoginGPM_1"/>
+</classes>
+</test>
+<test name="2_EnterMainPage_2" preserve-order="true">
+<parameter name="paramGroup" value="" />
+<classes>
+<class name="TestCases.TestProjectCreation.EnterMainPage_2"/>
+</classes>
+</test>
+<test name="3_EntercreateProjectPage_1" preserve-order="true">
+<parameter name="paramGroup" value="" />
+<classes>
+<class name="TestCases.TestProjectCreation.EntercreateProjectPage_1"/>
+</classes>
+</test>
+<test name="4_CreateProject_1" preserve-order="true">
+<parameter name="paramGroup" value="" />
+<classes>
+<class name="TestCases.TestProjectCreation.CreateProject_1"/>
+</classes>
+</test>
+<test name="5_ChooseFlowListType_1" preserve-order="true">
+<parameter name="paramGroup" value="" />
+<classes>
+<class name="TestCases.TestProjectCreation.ChooseFlowListType_1"/>
+</classes>
+</test>
+<test name="6_EnterCreateProjectMainPage_1" preserve-order="true">
+<parameter name="paramGroup" value="" />
+<classes>
+<class name="TestCases.TestProjectCreation.EnterCreateProjectMainPage_1"/>
+</classes>
+</test>
+<test name="7_ProjectBaseInfo_1" preserve-order="true">
+<parameter name="paramGroup" value="" />
+<classes>
+<class name="TestCases.TestProjectCreation.ProjectBaseInfo_1"/>
+</classes>
+</test>
+<test name="8_ChooseSalesDirection_1" preserve-order="true">
+<parameter name="paramGroup" value="" />
+<classes>
+<class name="TestCases.TestProjectCreation.ChooseSalesDirection_1"/>
+</classes>
+</test>
+<test name="9_ChooseProductCategory_1" preserve-order="true">
+<parameter name="paramGroup" value="" />
+<classes>
+<class name="TestCases.TestProjectCreation.ChooseProductCategory_1"/>
+</classes>
+</test>
+<test name="10_FillExpectGoal_1" preserve-order="true">
+<parameter name="paramGroup" value="" />
+<classes>
+<class name="TestCases.TestProjectCreation.FillExpectGoal_1"/>
+</classes>
+</test>
+<test name="11_FillOutlinePlan_1" preserve-order="true">
+<parameter name="paramGroup" value="" />
+<classes>
+<class name="TestCases.TestProjectCreation.FillOutlinePlan_1"/>
+</classes>
+</test>
+<test name="12_ChoosePlanTemplate_1" preserve-order="true">
+<parameter name="paramGroup" value="" />
+<classes>
+<class name="TestCases.TestProjectCreation.ChoosePlanTemplate_1"/>
+</classes>
+</test>
+<test name="13_FillInTestSugestion_1" preserve-order="true">
+<parameter name="paramGroup" value="" />
+<classes>
+<class name="TestCases.TestProjectCreation.FillInTestSugestion_1"/>
+</classes>
+</test>
+<test name="14_ProjectStartTime_1" preserve-order="true">
+<parameter name="paramGroup" value="" />
+<classes>
+<class name="TestCases.TestProjectCreation.ProjectStartTime_1"/>
+</classes>
+</test>
+<test name="15_ConfirmEndProjectDate_1" preserve-order="true">
+<parameter name="paramGroup" value="" />
+<classes>
+<class name="TestCases.TestProjectCreation.ConfirmEndProjectDate_1"/>
+</classes>
+</test>
+<test name="16_ChooseProjectManagermentMember_1" preserve-order="true">
+<parameter name="paramGroup" value="" />
+<classes>
+<class name="TestCases.TestProjectCreation.ChooseProjectManagermentMember_1"/>
+</classes>
+</test>
+<test name="17_ChooseStructuralDevelopmentEngineer_1" preserve-order="true">
+<parameter name="paramGroup" value="" />
+<classes>
+<class name="TestCases.TestProjectCreation.ChooseStructuralDevelopmentEngineer_1"/>
+</classes>
+</test>
+<test name="18_ChooseProjectManagement_1" preserve-order="true">
+<parameter name="paramGroup" value="" />
+<classes>
+<class name="TestCases.TestProjectCreation.ChooseProjectManagement_1"/>
+</classes>
+</test>
+<test name="19_ChooseHardwareDevelopmentEngineer_1" preserve-order="true">
+<parameter name="paramGroup" value="" />
+<classes>
+<class name="TestCases.TestProjectCreation.ChooseHardwareDevelopmentEngineer_1"/>
+</classes>
+</test>
+<test name="20_ChooseSoftwareDevelopmentEngineer_1" preserve-order="true">
+<parameter name="paramGroup" value="" />
+<classes>
+<class name="TestCases.TestProjectCreation.ChooseSoftwareDevelopmentEngineer_1"/>
+</classes>
+</test>
+<test name="21_ChooseElectronicControlTestEvaluationEngineer_1" preserve-order="true">
+<parameter name="paramGroup" value="" />
+<classes>
+<class name="TestCases.TestProjectCreation.ChooseElectronicControlTestEvaluationEngineer_1"/>
+</classes>
+</test>
+<test name="22_ChooseSoftwareDeveloper_1" preserve-order="true" enabled="false">
+<parameter name="paramGroup" value="" />
+<classes>
+<class name="TestCases.TestProjectCreation.ChooseSoftwareDeveloper_1"/>
+</classes>
+</test>
+<test name="23_ChooseElectronicControlDeveloper_1" preserve-order="true">
+<parameter name="paramGroup" value="" />
+<classes>
+<class name="TestCases.TestProjectCreation.ChooseElectronicControlDeveloper_1"/>
+</classes>
+</test>
+<test name="24_ChooseCompleteMachineTestAndEvaluationEngineer_1" preserve-order="true">
+<parameter name="paramGroup" value="" />
+<classes>
+<class name="TestCases.TestProjectCreation.ChooseCompleteMachineTestAndEvaluationEngineer_1"/>
+</classes>
+</test>
+<test name="25_ChooseProjectManagers_3" preserve-order="true">
+<parameter name="paramGroup" value="" />
+<classes>
+<class name="TestCases.TestProjectCreation.ChooseProjectManagers_3"/>
+</classes>
+</test>
+<test name="26_ChooseIndustry2_1" preserve-order="true">
+<parameter name="paramGroup" value="" />
+<classes>
+<class name="TestCases.TestProjectCreation.ChooseIndustry2_1"/>
+</classes>
+</test>
+<test name="27_ChooseManufacturingRepresentative_1" preserve-order="true">
+<parameter name="paramGroup" value="" />
+<classes>
+<class name="TestCases.TestProjectCreation.ChooseManufacturingRepresentative_1"/>
+</classes>
+</test>
+<test name="28_ChoosePerformanceDevelopmentEngineer_1" preserve-order="true">
+<parameter name="paramGroup" value="" />
+<classes>
+<class name="TestCases.TestProjectCreation.ChoosePerformanceDevelopmentEngineer_1"/>
+</classes>
+</test>
+<test name="29_ChooseHardwareDeveloper_1" preserve-order="true" enabled="false">
+<parameter name="paramGroup" value="" />
+<classes>
+<class name="TestCases.TestProjectCreation.ChooseHardwareDeveloper_1"/>
+</classes>
+</test>
+<test name="30_NextSetPage_2" preserve-order="true">
+<parameter name="paramGroup" value="" />
+<classes>
+<class name="TestCases.TestProjectCreation.NextSetPage_2"/>
+</classes>
+</test>
+<test name="31_ChooseComponenTestEvaluationRepresentative_1" preserve-order="true">
+<parameter name="paramGroup" value="" />
+<classes>
+<class name="TestCases.TestProjectCreation.ChooseComponenTestEvaluationRepresentative_1"/>
+</classes>
+</test>
+<test name="32_ChooseQualityDirector_1" preserve-order="true">
+<parameter name="paramGroup" value="" />
+<classes>
+<class name="TestCases.TestProjectCreation.ChooseQualityDirector_1"/>
+</classes>
+</test>
+<test name="33_ChooseHeadofproductDevelopmentDepartment_1" preserve-order="true">
+<parameter name="paramGroup" value="" />
+<classes>
+<class name="TestCases.TestProjectCreation.ChooseHeadofproductDevelopmentDepartment_1"/>
+</classes>
+</test>
+<test name="34_StartFlow_1" preserve-order="true">
+<parameter name="paramGroup" value="" />
+<classes>
+<class name="TestCases.TestProjectCreation.StartFlow_1"/>
+</classes>
+</test>
+<test name="35_ChooseFlowName1_1" preserve-order="true" enabled="false">
+<parameter name="paramGroup" value="" />
+<classes>
+<class name="TestCases.TestProjectCreation.ChooseFlowName1_1"/>
+</classes>
+</test>
+<test name="36_EnterFlow1_1" preserve-order="true" enabled="false">
+<parameter name="paramGroup" value="" />
+<classes>
+<class name="TestCases.TestProjectCreation.EnterFlow1_1"/>
+</classes>
+</test>
+<test name="37_ReviewFlowNode_1" preserve-order="true" enabled="false">
+<parameter name="paramGroup" value="" />
+<classes>
+<class name="TestCases.TestProjectCreation.ReviewFlowNode_1"/>
+</classes>
+</test>
+<test name="38_ChooseFlowName2_1" preserve-order="true" enabled="false">
+<parameter name="paramGroup" value="" />
+<classes>
+<class name="TestCases.TestProjectCreation.ChooseFlowName2_1"/>
+</classes>
+</test>
+<test name="39_EnterFlow2_1" preserve-order="true" enabled="false">
+<parameter name="paramGroup" value="" />
+<classes>
+<class name="TestCases.TestProjectCreation.EnterFlow2_1"/>
+</classes>
+</test>
+</suite>

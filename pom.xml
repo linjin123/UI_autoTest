@@ -1,0 +1,325 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>SeleniumJava</groupId>
+    <artifactId>UI_autoTest</artifactId>
+    <version>2.0-SNAPSHOT</version>
+
+    <dependencies>
+<!--        <dependency>-->
+<!--            <groupId>org</groupId>-->
+<!--            <artifactId>opencv</artifactId>-->
+<!--            <scope>system</scope>-->
+<!--            <systemPath>${project.basedir}/lib/opencv-453.jar</systemPath>-->
+<!--            <version>4.5.3</version>-->
+<!--        </dependency>-->
+        <dependency>
+            <groupId>org</groupId>
+            <artifactId>opencv</artifactId>
+<!--            <scope>system</scope>-->
+<!--            <systemPath>${project.basedir}/lib/opencv-453.jar</systemPath>-->
+            <version>4.5.3</version>
+        </dependency>
+        <dependency>
+            <groupId>org.testng</groupId>
+            <artifactId>testng</artifactId>
+            <version>6.10</version>
+        </dependency>
+        <dependency>
+            <groupId>org.seleniumhq.selenium</groupId>
+            <artifactId>selenium-java</artifactId>
+            <version>3.7.1</version>
+        </dependency>
+        <dependency>
+            <groupId>org.seleniumhq.selenium</groupId>
+            <artifactId>selenium-server</artifactId>
+            <version>3.7.0</version>
+
+        </dependency>
+        <dependency>
+            <groupId>org.apache.poi</groupId>
+            <artifactId>poi</artifactId>
+            <version>3.10-FINAL</version>
+
+        </dependency>
+        <dependency>
+            <groupId>org.apache.poi</groupId>
+            <artifactId>poi-ooxml</artifactId>
+            <version>3.10-FINAL</version>
+
+        </dependency>
+        <dependency>
+            <groupId>org.apache.poi</groupId>
+            <artifactId>poi-ooxml-schemas</artifactId>
+            <version>3.10-FINAL</version>
+
+        </dependency>
+        <dependency>
+            <groupId>org.apache.poi</groupId>
+            <artifactId>ooxml-schemas</artifactId>
+            <version>1.3</version>
+
+        </dependency>
+        <dependency>
+            <groupId>org.apache.poi</groupId>
+            <artifactId>poi-examples</artifactId>
+            <version>3.10-FINAL</version>
+
+        </dependency>
+        <dependency>
+            <groupId>org.apache.velocity</groupId>
+            <artifactId>velocity</artifactId>
+            <version>1.7</version>
+        </dependency>
+        <dependency>
+            <groupId>com.google.inject</groupId>
+            <artifactId>guice</artifactId>
+            <version>3.0</version>
+        </dependency>
+        <dependency>
+            <groupId>org.uncommons</groupId>
+            <artifactId>reportng</artifactId>
+            <version>1.1.4</version>
+            <!--<scope>system</scope>
+           <systemPath>${basedir}/libs/reportng-1.1.4.jar</systemPath>-->
+            <exclusions>
+                <exclusion>
+                    <groupId>org.testng</groupId>
+                    <artifactId>testng</artifactId>
+                </exclusion>
+            </exclusions>
+        </dependency>
+        <dependency>
+            <groupId>commons-io</groupId>
+            <artifactId>commons-io</artifactId>
+            <version>2.5</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>io.netty</groupId>
+            <artifactId>netty</artifactId>
+            <version>3.5.2.Final</version>
+            <scope>test</scope>
+        </dependency>
+        <!--
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-jdbc</artifactId>
+            <version>5.0.0.RELEASE</version>
+        </dependency>-->
+        <dependency>
+            <groupId>org.apache.poi</groupId>
+            <artifactId>poi-scratchpad</artifactId>
+            <version>3.10-FINAL</version>
+            <scope>test</scope>
+        </dependency>
+        <!-- 添加oracle jdbc driver -->
+        <dependency>
+            <groupId>com.oracle</groupId>
+            <artifactId>ojdbc6</artifactId>
+            <version>11.2.0</version>
+        </dependency>
+
+        <dependency>
+            <groupId>mysql</groupId>
+            <artifactId>mysql-connector-java</artifactId>
+            <version>5.1.45</version>
+        </dependency>
+
+        <dependency>
+            <groupId>com.github.mifmif</groupId>
+            <artifactId>generex</artifactId>
+            <version>1.0.2</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.ant</groupId>
+            <artifactId>ant</artifactId>
+            <version>1.8.2</version>
+            <scope>test</scope>
+        </dependency>
+        <!-- okhttp -->
+        <dependency>
+            <groupId>com.squareup.okhttp3</groupId>
+            <artifactId>okhttp</artifactId>
+            <version>3.11.0</version>
+        </dependency>
+        <dependency>
+            <groupId>com.google.code.gson</groupId>
+            <artifactId>gson</artifactId>
+            <version>2.8.2</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.mortbay.jetty</groupId>
+            <artifactId>jetty-util</artifactId>
+            <version>6.1.25</version>
+            <scope>test</scope>
+        </dependency>
+        <!-- okhttp /-->
+        <!-- https://mvnrepository.com/artifact/org.json/json -->
+        <dependency>
+            <groupId>org.json</groupId>
+            <artifactId>json</artifactId>
+            <version>20180813</version>
+        </dependency>
+
+        <dependency>
+            <groupId>com.jayway.jsonpath</groupId>
+            <artifactId>json-path</artifactId>
+            <version>2.3.0</version>
+        </dependency>
+
+        <dependency>
+            <groupId>net.sf.json-lib</groupId>
+            <artifactId>json-lib</artifactId>
+            <version>2.2.2</version>
+            <classifier>jdk15</classifier>
+        </dependency>
+
+        <dependency>
+            <groupId>org.apache.httpcomponents</groupId>
+            <artifactId>httpclient</artifactId>
+            <version>4.5.6</version>
+        </dependency>
+        <!-- https://mvnrepository.com/artifact/ch.ethz.ganymed/ganymed-ssh2 -->
+        <dependency>
+            <groupId>ch.ethz.ganymed</groupId>
+            <artifactId>ganymed-ssh2</artifactId>
+            <version>build210</version>
+        </dependency>
+        <!-- https://mvnrepository.com/artifact/org.apache.axis2/axis2 -->
+        <dependency>
+            <groupId>org.apache.axis2</groupId>
+            <artifactId>axis2</artifactId>
+            <version>1.6.2</version>
+            <type>pom</type>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.tomcat.embed</groupId>
+            <artifactId>tomcat-embed-core</artifactId>
+            <version>9.0.21</version>
+        </dependency>
+        <dependency>
+            <groupId>io.rest-assured</groupId>
+            <artifactId>rest-assured</artifactId>
+            <version>4.1.2</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>io.rest-assured</groupId>
+            <artifactId>json-path</artifactId>
+            <version>4.1.2</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>io.rest-assured</groupId>
+            <artifactId>xml-path</artifactId>
+            <version>4.1.2</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>io.rest-assured</groupId>
+            <artifactId>json-schema-validator</artifactId>
+            <version>4.1.2</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>Impala</groupId>
+            <artifactId>ImpalaJDBC41</artifactId>
+            <version>2.6.12.1013</version>
+        </dependency>
+    </dependencies>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>3.1</version>
+                <configuration>
+                    <source>1.8</source>
+                    <target>1.8</target>
+                    <encoding>UTF-8</encoding>
+
+                </configuration>
+            </plugin>
+
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-surefire-plugin</artifactId>
+                <version>2.19.1</version>
+                <!--version>3.0.0-M5</version>-->
+                <configuration>
+                    <rerunFailingTestsCount>2</rerunFailingTestsCount>
+                    <properties>
+                        <property>
+                            <name>usedefaultlisteners</name>
+                            <value>false</value>
+                        </property>
+                        <property>
+                            <name>listener</name>
+                            <value>org.uncommons.reportng.HTMLReporter, org.uncommons.reportng.JUnitXMLReporter, Framework.MyRetryListener</value>
+                        </property>
+                        <property>
+                            <name>suitethreadpoolsize</name>
+                            <value>${suitethreadpoolsize}</value>
+                        </property>
+                    </properties>
+                    <systemPropertyVariables>
+                        <browser>${browser}</browser>
+                        <taskId>${taskId}</taskId>
+                        <recordId>${recordId}</recordId>
+                        <suiteId>${suiteId}</suiteId>
+                        <record>${record}</record>
+                        <stepRerun>${stepRerun}</stepRerun>
+                        <caseRerun>${caseRerun}</caseRerun>
+                        <suiteRerun>${suiteRerun}</suiteRerun>
+                        <maxRetry>${maxRetry}</maxRetry>
+                        <!--查找元素的等待时间（以秒位单位）-->
+                        <implicitlyWait>${implicitlyWait}</implicitlyWait>
+                        <!--设置测试执行完成后是否关闭浏览器，true则关闭，false则不关闭-->
+                        <closeBrowserFlag>${closeBrowserFlag}</closeBrowserFlag>
+                        <productName>${productName}</productName>
+                        <projectName>${projectName}</projectName>
+                        <usingOpenChrome>${usingOpenChrome}</usingOpenChrome>
+                        <delHistoryReport>${delHistoryReport}</delHistoryReport>
+                    </systemPropertyVariables>
+                    <suiteXmlFiles>
+                        
+
+                    </suiteXmlFiles>
+                </configuration>
+
+            </plugin>
+
+        </plugins>
+    </build>
+
+
+    <properties>
+        <project.builder.sourcesEncoding>UTF-8</project.builder.sourcesEncoding>
+        <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+        <maven.compiler.encoding>UTF-8</maven.compiler.encoding>
+        <browser>Chrome</browser>
+        <taskId></taskId>
+        <recordId></recordId>
+        <suiteId></suiteId>
+        <record>false</record>
+        <stepRerun>false</stepRerun>
+        <caseRerun>false</caseRerun>
+        <suiteRerun>false</suiteRerun>
+        <maxRetry>1</maxRetry>
+        <!--查找元素的等待时间（以秒位单位）-->
+        <implicitlyWait>10</implicitlyWait>
+        <closeBrowserFlag>true</closeBrowserFlag>
+        <productName></productName>
+        <projectName></projectName>
+        <usingOpenChrome>false</usingOpenChrome>
+        <delHistoryReport>false</delHistoryReport>
+		<suitethreadpoolsize>1</suitethreadpoolsize>
+    </properties>
+
+</project>

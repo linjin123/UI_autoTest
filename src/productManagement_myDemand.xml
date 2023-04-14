@@ -1,0 +1,210 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="productManagement_myDemand" parallel="false" thread-count="1" preserve-order="true">
+<parameter name="driverID" value="productManagement_myDemand"/>
+<parameter name="browser" value="${browser}"/>
+<parameter name="record" value="${record}"/>
+<parameter name="productName" value="${productName}"/>
+<parameter name="projectName" value="${projectName}"/>
+<parameter name="implicitlyWait" value="${implicitlyWait}"/>
+<parameter name="closeBrowserFlag" value="${closeBrowserFlag}"/>
+<parameter name="usingOpenChrome" value="${usingOpenChrome}"/>
+<parameter name="taskId" value="${taskId}"/>
+<parameter name="recordId" value="${recordId}"/>
+<parameter name="suiteId" value="${suiteId}"/>
+<parameter name="delHistoryReport" value="${delHistoryReport}"/>
+<parameter name="stepRerun" value="${stepRerun}"/>
+<parameter name="caseRerun" value="${caseRerun}"/>
+<parameter name="suiteRerun" value="${suiteRerun}"/>
+<parameter name="maxRetry" value="${maxRetry}"/>
+<parameter name="skipOtherTCsWhenFailed" value="0"/>
+<listeners>
+<listener class-name="Framework.MyNewReport"/>
+<listener class-name="Framework.MyListener"/>
+</listeners>
+<test name="1_Login_1" preserve-order="true">
+<parameter name="paramGroup" value="" />
+<classes>
+<class name="TestCases.productManagement_myDemand.Login_1"/>
+</classes>
+</test>
+<test name="2_addProduction_1" preserve-order="true">
+<parameter name="paramGroup" value="" />
+<classes>
+<class name="TestCases.productManagement_myDemand.addProduction_1"/>
+</classes>
+</test>
+<test name="3_auditProduction_1" preserve-order="true">
+<parameter name="paramGroup" value="" />
+<classes>
+<class name="TestCases.productManagement_myDemand.auditProduction_1"/>
+</classes>
+</test>
+<test name="4_signProduction_1" preserve-order="true">
+<parameter name="paramGroup" value="" />
+<classes>
+<class name="TestCases.productManagement_myDemand.signProduction_1"/>
+</classes>
+</test>
+<test name="5_editOneNodeProductionMoudle_1" preserve-order="true">
+<parameter name="paramGroup" value="selectNotAll" />
+<classes>
+<class name="TestCases.productManagement_myDemand.editOneNodeProductionMoudle_1"/>
+</classes>
+</test>
+<test name="6_editOneNodeProductionMoudle_1" preserve-order="true">
+<parameter name="paramGroup" value="selectAll" />
+<classes>
+<class name="TestCases.productManagement_myDemand.editOneNodeProductionMoudle_1"/>
+</classes>
+</test>
+<test name="7_addFixedPer_1" preserve-order="true">
+<parameter name="paramGroup" value="" />
+<classes>
+<class name="TestCases.productManagement_myDemand.addFixedPer_1"/>
+</classes>
+</test>
+<test name="8_verifyAddFixedPer_1" preserve-order="true">
+<parameter name="paramGroup" value="" />
+<classes>
+<class name="TestCases.productManagement_myDemand.verifyAddFixedPer_1"/>
+</classes>
+</test>
+<test name="9_delFixedPer_1" preserve-order="true">
+<parameter name="paramGroup" value="" />
+<classes>
+<class name="TestCases.productManagement_myDemand.delFixedPer_1"/>
+</classes>
+</test>
+<test name="10_DemandNoSelect_1" preserve-order="true">
+<parameter name="paramGroup" value="" />
+<classes>
+<class name="TestCases.productManagement_myDemand.DemandNoSelect_1"/>
+</classes>
+</test>
+<test name="11_verifyDemandNoSelect_1" preserve-order="true">
+<parameter name="paramGroup" value="" />
+<classes>
+<class name="TestCases.productManagement_myDemand.verifyDemandNoSelect_1"/>
+</classes>
+</test>
+<test name="12_addDemandNotSelectMoudle_1" preserve-order="true">
+<parameter name="paramGroup" value="" />
+<classes>
+<class name="TestCases.productManagement_myDemand.addDemandNotSelectMoudle_1"/>
+</classes>
+</test>
+<test name="13_verifyDemander_1" preserve-order="true">
+<parameter name="paramGroup" value="" />
+<classes>
+<class name="TestCases.productManagement_myDemand.verifyDemander_1"/>
+</classes>
+</test>
+<test name="14_addDemand_1" preserve-order="true">
+<parameter name="paramGroup" value="" />
+<classes>
+<class name="TestCases.productManagement_myDemand.addDemand_1"/>
+</classes>
+</test>
+<test name="15_verifySelModuleDemander_1" preserve-order="true">
+<parameter name="paramGroup" value="" />
+<classes>
+<class name="TestCases.productManagement_myDemand.verifySelModuleDemander_1"/>
+</classes>
+</test>
+<test name="16_demandAddFileForD_1" preserve-order="true">
+<parameter name="paramGroup" value="" />
+<classes>
+<class name="TestCases.productManagement_myDemand.demandAddFileForD_1"/>
+</classes>
+</test>
+<test name="17_verifyFileUploadGetEdit_1" preserve-order="true">
+<parameter name="paramGroup" value="" />
+<classes>
+<class name="TestCases.productManagement_myDemand.verifyFileUploadGetEdit_1"/>
+</classes>
+</test>
+<test name="18_verifyFileUploadEdit_1" preserve-order="true">
+<parameter name="paramGroup" value="" />
+<classes>
+<class name="TestCases.productManagement_myDemand.verifyFileUploadEdit_1"/>
+</classes>
+</test>
+<test name="19_verifyFileUploadBackfill_1" preserve-order="true">
+<parameter name="paramGroup" value="" />
+<classes>
+<class name="TestCases.productManagement_myDemand.verifyFileUploadBackfill_1"/>
+</classes>
+</test>
+<test name="20_demandPMExamine_1" preserve-order="true">
+<parameter name="paramGroup" value="" />
+<classes>
+<class name="TestCases.productManagement_myDemand.demandPMExamine_1"/>
+</classes>
+</test>
+<test name="21_demandSignerExamine_1" preserve-order="true">
+<parameter name="paramGroup" value="" />
+<classes>
+<class name="TestCases.productManagement_myDemand.demandSignerExamine_1"/>
+</classes>
+</test>
+<test name="22_demandForTd_1" preserve-order="true">
+<parameter name="paramGroup" value="" />
+<classes>
+<class name="TestCases.productManagement_myDemand.demandForTd_1"/>
+</classes>
+</test>
+<test name="23_demandAddFileForTd_1" preserve-order="true">
+<parameter name="paramGroup" value="" />
+<classes>
+<class name="TestCases.productManagement_myDemand.demandAddFileForTd_1"/>
+</classes>
+</test>
+<test name="24_verifyFileUploadGetEditForTd_1" preserve-order="true">
+<parameter name="paramGroup" value="" />
+<classes>
+<class name="TestCases.productManagement_myDemand.verifyFileUploadGetEditForTd_1"/>
+</classes>
+</test>
+<test name="25_verifyFileUploadEditForTd_1" preserve-order="true">
+<parameter name="paramGroup" value="" />
+<classes>
+<class name="TestCases.productManagement_myDemand.verifyFileUploadEditForTd_1"/>
+</classes>
+</test>
+<test name="26_verifyFileUploadBackfillForTd_1" preserve-order="true">
+<parameter name="paramGroup" value="" />
+<classes>
+<class name="TestCases.productManagement_myDemand.verifyFileUploadBackfillForTd_1"/>
+</classes>
+</test>
+<test name="27_verifyFieldpersonnel_1" preserve-order="true">
+<parameter name="paramGroup" value="" />
+<classes>
+<class name="TestCases.productManagement_myDemand.verifyFieldpersonnel_1"/>
+</classes>
+</test>
+<test name="28_demandForTd2_1" preserve-order="true">
+<parameter name="paramGroup" value="" />
+<classes>
+<class name="TestCases.productManagement_myDemand.demandForTd2_1"/>
+</classes>
+</test>
+<test name="29_addProductVersion_1" preserve-order="true">
+<parameter name="paramGroup" value="" />
+<classes>
+<class name="TestCases.addProductVersion.addProductVersion_1"/>
+</classes>
+</test>
+<test name="30_demandForPlanner_1" preserve-order="true">
+<parameter name="paramGroup" value="" />
+<classes>
+<class name="TestCases.productManagement_myDemand.demandForPlanner_1"/>
+</classes>
+</test>
+<test name="31_publish_1" preserve-order="true">
+<parameter name="paramGroup" value="" />
+<classes>
+<class name="TestCases.productManagement_myDemand.publish_1"/>
+</classes>
+</test>
+</suite>

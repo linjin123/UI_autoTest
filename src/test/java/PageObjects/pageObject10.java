@@ -1,0 +1,55 @@
+package PageObjects;
+import org.openqa.selenium.By;
+import java.util.HashMap;
+import java.util.Map;
+public class pageObject10 {
+public static Map<String,By > PO= new HashMap<String,By>();
+public static Map<String,String > POString= new HashMap<String,String>();
+static{
+POString.put("下一步","cssSelector;;[gppm-ui=createFlow__next]");
+POString.put("下拉菜单输入框","cssSelector;;div[aria-hidden=false].popper-select-tree  input[type=text]");
+POString.put("其他需求","cssSelector;;.inputNumberItem input");
+POString.put("其他需求样机用途","cssSelector;;[gppm-ui=workRequireLabel__otherPrototypeFunction0] input");
+POString.put("刷新按钮","cssSelector;;button[gppm-ui=flowList__refresh]");
+POString.put("参考机型编码","cssSelector;;.is-scrolling-left tr td:nth-child(4) input");
+POString.put("参考机型编码-产品复选框","cssSelector;;#__MaterialProducts__ .el-table__body .el-checkbox");
+POString.put("参考机型编码-产品编码","cssSelector;;[gppm-ui=materialProducts__dialog__code] input");
+POString.put("参考机型编码-搜索","cssSelector;;.dialog-head__right [class='el-button el-button--primary']");
+POString.put("参考机型编码-确定","cssSelector;;[gppm-ui=materialProducts__dialog__ok]");
+POString.put("库存组织","cssSelector;;.is-scrolling-left tr td:nth-child(2) span.el-input__suffix");
+POString.put("所属项目","cssSelector;;#_PROJECTID  input");
+POString.put("技术和工艺准备-名称","cssSelector;;[gppm-ui=craftsRequireLabel__name0]");
+POString.put("技术和工艺准备-新建","cssSelector;;[gppm-ui=craftsRequireLabel__button-create]");
+POString.put("技术和工艺准备-责任人","cssSelector;;[gppm-ui=craftsRequireLabel__user0] input");
+POString.put("技术和工艺准备-选择第一个名称","cssSelector;;[aria-hidden=false] .filter-tree>div:first-child");
+POString.put("新建","cssSelector;;[gppm-ui=flowList__create]");
+POString.put("标题","cssSelector;;#_NAME input");
+POString.put("测试需求","cssSelector;;.__testCount_selected__ input");
+POString.put("组织架构-人员搜索框","cssSelector;;[placeholder=请输入搜索人员]");
+POString.put("组织架构-人员搜索框放大镜","cssSelector;;i.el-icon-search");
+POString.put("组织架构-确定","cssSelector;;[gppm-ui=selectUser__ok]");
+POString.put("组织架构-选择人员","cssSelector;;.center__content .el-radio__input");
+POString.put("要求完成日期","cssSelector;;[gppm-ui=workRequireLabel__planEndDate0]");
+POString.put("要求完成日期-今天","xpath;;(//*[contains(text(),'今天')])[2]");
+POString.put("计划开始日期","cssSelector;;[gppm-ui=workRequireLabel__planStartDate0]");
+POString.put("计划开始日期-今天","xpath;;//*[contains(text(),'今天')]");
+POString.put("计划组","cssSelector;;.is-scrolling-left tr td:nth-child(3) span.el-input__suffix");
+POString.put("选择第一个库存组织","cssSelector;;span[title=INV_M01_广东美的制冷设备-顺德工厂_制造库存组织]");
+POString.put("中试00计划组","xpath;;//span[@title='中试00']");
+POString.put("选择项目","cssSelector;;.select-project__wrapper .el-table__body tr:first-child .el-radio__input");
+POString.put("链接","cssSelector;;[gppm-ui=workRequireLabel__button-headLinkFirst]");
+POString.put("链接-产品复选框","cssSelector;;#__MaterialProducts__ .el-table__body .el-checkbox");
+POString.put("链接-产品编码","cssSelector;;[gppm-ui=materialProducts__dialog__code] input");
+POString.put("链接-搜索","cssSelector;;.dialog-head__right [class='el-button el-button--primary']");
+POString.put("链接-确定","cssSelector;;[gppm-ui=materialProducts__dialog__ok]");
+POString.put("项目搜索-确定","cssSelector;;[gppm-ui=selectProject__ok]");
+POString.put("项目编号","xpath;;//input[@placeholder='项目编号']");
+POString.put("计划组搜索","xpath;;//div[@x-placement='bottom-start']//div[@class='el-input']");
+POString.put("需求样机去向","cssSelector;;[gppm-ui=workRequireLabel__otherPrototypeFunction0]");
+POString.put("其他需求样机的用途去向","cssSelector;;.Plugin_WorkRequireLabel .el-table__body-wrapper");
+POString.put("样机需求数量","cssSelector;;[class='el-input el-input--mini el-input--suffix NumberSelect']>input");
+POString.put("作业需求信息列表标题","cssSelector;;.complete_machine tr th");
+POString.put("样机需求用途","cssSelector;;[class='el-input el-input--mini']>input");
+POString.put("样机需求人","cssSelector;;[class='el-input el-input--mini el-input--suffix el-popover__reference']>input");
+}
+}

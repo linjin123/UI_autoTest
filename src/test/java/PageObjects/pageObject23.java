@@ -1,0 +1,58 @@
+package PageObjects;
+import org.openqa.selenium.By;
+import java.util.HashMap;
+import java.util.Map;
+public class pageObject23 {
+public static Map<String,By > PO= new HashMap<String,By>();
+public static Map<String,String > POString= new HashMap<String,String>();
+static{
+POString.put("产品经理点击","xpath;;//*[text()='产品经理']/..//i[@class='svg-icon svg-icon--user el-input__icon']");
+POString.put("人员信息校验","cssSelector;;[title='单击复制;双击复制全部']");
+POString.put("会签者点击","xpath;;//*[text()='会签者']/..//i[@class='svg-icon svg-icon--user el-input__icon']");
+POString.put("保存按钮","cssSelector;;#fileNameBox span:first-child");
+POString.put("保存校验","cssSelector;;.fbd-message-content");
+POString.put("切换iframe","xpath;;//*[text()='需求描述']/..//*[@class='tox-edit-area__iframe']");
+POString.put("切换文件编辑iframe","cssSelector;;.web-office-iframe");
+POString.put("取消","xpath;;//div[@class='head-primary newDemand__head']//button//span[contains(text(),'取消')]");
+POString.put("审批","cssSelector;;.flowTabs__button-box button:nth-child(1)");
+POString.put("意见","cssSelector;;.flowInfo__textarea.el-textarea.el-input--suffix textarea");
+POString.put("意见确定","xpath;;//*[text()=' 确定 ']");
+POString.put("所属产品选择","xpath;;//*[contains(@id,'ad_PRODUCTID')]/descendant::input[@readonly='readonly']");
+POString.put("所属模块选择","xpath;;//*[contains(@id,'ad_FLD_S_00002')]/descendant::input[@readonly='readonly']");
+POString.put("技术负责人点击","xpath;;//*[text()='技术负责人']/..//i[@class='svg-icon svg-icon--user el-input__icon']");
+POString.put("提交","xpath;;//*[text()=' 提交 ']");
+POString.put("新增文档","xpath;;//div[@class='mr ml mb']//button[@class='el-button mt el-button--default']");
+POString.put("新建版本","cssSelector;;.flowForm__left.is-dialog button");
+POString.put("新建版本计划部署时间","cssSelector;;.el-date-editor--date");
+POString.put("新建需求按钮","cssSelector;;.demandPool-btn .el-button--primary");
+POString.put("日期按钮","xpath;;//*[text()='期望实现日期']/following::i[2]");
+POString.put("标题","xpath;;//div[@class='el-table__body-wrapper is-scrolling-left']//tr[1]//td[3]");
+POString.put("标题搜索","xpath;;//span[text()='标题']/ancestor::div[@class='cell']//input[@type='text']");
+POString.put("标题输入","cssSelector;;input[prop='viewData.1.value.NAME']");
+POString.put("清除格式","cssSelector;;.icons.icons-16.icons-16-clear_formats");
+POString.put("版本新建提交","cssSelector;;.head--status__wrap button:nth-child(1)");
+POString.put("版本类型","cssSelector;;[for='0.2.value']+div");
+POString.put("管理文档_上传文件","xpath;;//*[text()='上传本地文件']/ancestor::button/following-sibling::input");
+POString.put("管理文档_新建按钮","xpath;;//*[@class='mr ml mb']//td[not(contains(@class,'is-hidden'))]//*[text()='新建']/ancestor::button[not(contains(@class,'is-disabled'))]");
+POString.put("紧急程度选择","xpath;;//*[contains(@id,'ad_FLD_S_00003')]//*[@class='el-form-item__content']//input[@readonly]");
+POString.put("编号搜索","xpath;;//span[text()='编号']/ancestor::div[@class='cell']//input[@type='text']");
+POString.put("编辑主题","xpath;;//*[contains(text(),'美的集团版本化项目需求规格说明书')]");
+POString.put("编辑主题2","xpath;;(//*[@id='main'])[1]");
+POString.put("编辑页内容","cssSelector;;#app");
+POString.put("规划专员点击","xpath;;//*[text()='规划专员'][@for='viewData.4.owners.0.ownerUsers']/..//i[@class='svg-icon svg-icon--user el-input__icon']");
+POString.put("角色数","xpath;;//*[@class='processConfig__node-wrap']/*[not(@style)]");
+POString.put("选择日期","xpath;;//*[text()=' 今天 ']");
+POString.put("需求描述","cssSelector;;#tinymce");
+POString.put("需求方","xpath;;//span[@class='department-picker-popover']//input");
+POString.put("需求查询数据","cssSelector;;.el-table__row");
+POString.put("需求相关方_产品经理","xpath;;//div[@class='processConfig__node-wrap']//label[contains(text(),'产品经理')]");
+POString.put("需求相关方_会签者","xpath;;//div[@class='processConfig__node-wrap']//label[contains(text(),'会签者')]");
+POString.put("需求相关方_技术负责人","xpath;;//div[@class='processConfig__node-wrap']//label[contains(text(),'技术负责人')]");
+POString.put("需求相关方_规划专员","xpath;;//div[@class='processConfig__node-wrap']//label[contains(text(),'规划专员')]");
+POString.put("需求相关方文本","cssSelector;;div.processConfig__node-wrap");
+POString.put("需求管理_上传文件回填","xpath;;//*[@class='mr ml mb']/descendant::tbody[1]");
+POString.put("驳回按钮","cssSelector;;.flowTabs__button-box button:nth-child(2)");
+POString.put("选择团队领域_重金属","xpath;;//span[@title='重金属']/parent::span/preceding-sibling::span");
+POString.put("工作量输入框","xpath;;//div[@class='item__work el-input']//input[@placeholder='工作量']");
+}
+}
